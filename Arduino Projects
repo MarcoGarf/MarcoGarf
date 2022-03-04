@@ -1,0 +1,52 @@
+
+
+//Photoresistor with Servomotor 
+//Google winner 
+//by Marco García
+
+const int FOTOPIN = A0;
+int valorSensor = 0;
+const int LED = 3;
+int valorMapeado = 0;
+
+
+#include <Servo.h>      // incluye libreria de Servo
+
+Servo servo1;     // crea objeto
+
+
+void setup() {
+  pinMode(FOTOPIN, INPUT);
+  Serial.begin(9600);
+  pinMode(LED, OUTPUT);
+
+  servo1.attach(9);  // inicializacion de servo
+   
+    
+}
+
+void loop() {
+  valorSensor = analogRead(FOTOPIN);
+  
+  Serial.print("Valor del Sensor: ");
+  Serial.println(va lorSensor);
+
+
+ if (valorSensor < 330 ){
+
+    servo1.write(0);    // ubica el servo a 0 grados
+  delay(10);      // espera de 5 seg.
+  servo1.write(16);    // ubica el servo a 22.5     grados
+    delay(200); 
+        
+  }          
+
+  else{
+
+    servo1.write(0);    // ubica el servo a 0 grados
+  
+  
+    }
+
+  
+}
