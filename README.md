@@ -1,7 +1,5 @@
 - 👋 Hi, I’m @MarcoGarf
-- 👀 I’m interested in Data analysis, Arduino Programing and Matlab
-- 🌱 I’m currently learning Java 
-- 📫 How to reach me xxx
+
 
 <!---
 MarcoGarf/MarcoGarf is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
